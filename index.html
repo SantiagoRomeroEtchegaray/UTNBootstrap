@@ -3,12 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cinema</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cinema</a>
+
+            <!-- Button displayed when navbar collapsed -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#movies">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- <hr class="border border-danger m-0 opacity-100 border-5 w-100"> -->
+
+    <!-- Showcase -->
+    <section id="carousel" class="carousel slide">
+        <!-- Bottom indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="bg-danger active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" class="bg-danger" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" class="bg-danger" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <!-- Center div on img -->
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h2 class="text-primary">Hello</h2>
+                    <p class="text-primary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, impedit.</p>
+                </div>
+
+                <img src="./assets/img/people_biking.jpg" class="d-block w-100" alt="">
+            </div>
+
+            <div class="carousel-item">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h2 class="text-primary">Hello</h2>
+                    <p class="text-primary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, impedit.</p>
+                </div>
+
+                <img src="./assets/img/sitting_smilling.jpg" class="d-block w-100" alt="">
+            </div>
+
+            <div class="carousel-item">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h2 class="text-primary">Hello</h2>
+                    <p class="text-primary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, impedit.</p>
+                </div>
+
+                <img src="./assets/img/people_biking.jpg" class="d-block w-100" alt="">
+            </div>
+        </div>
+
+        <!-- Buttons prev/next -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="container-fluid p-3 bg-dark">
+            <div class="row g-1">
+                <h2 class="col text-light text-center">Get our latest news!</h2>
+
+                <div class="col-md">
+                    <input type="text" class="form-control" placeholder="Insert email" aria-label="Email">
+                </div>
+
+                <div class="col-md">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+    </section>
+
+    <!-- Movies -->
+    <section id="movies" class="container-fluid bg-secondary p-5">
+        <h2 class="text-center text-dark mb-5">Movies you can watch today</h2>
+
+        <div class="row g-1 text-center">
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card w-65 bg-danger">
+                    <img src="./assets/img/poster.jpg" alt="Movie poster" class="card-image-top">
+                    <h4 class="card-title">Movie Title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, adipisci.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card w-65 bg-success">
+                    <img src="./assets/img/poster.jpg" alt="Movie poster" class="card-image-top">
+                    <h4 class="card-title">Movie Title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, adipisci.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card w-65 bg-warning">
+                    <img src="./assets/img/poster.jpg" alt="Movie poster" class="card-image-top">
+                    <h4 class="card-title">Movie Title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, adipisci.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule? -->
+
+    <footer class="container-fluid bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Cinema</h2>
+                </div>
+
+                <div class="col">
+                    <p>Website by SRE</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
