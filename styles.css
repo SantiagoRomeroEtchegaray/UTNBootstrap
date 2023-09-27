@@ -1,3 +1,23 @@
-.w-65 {
-    width: 65%!important;
+* {
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Oswald', sans-serif;  
+}
+
+.bg-img-cinema {
+    background-image: url("./assets/img/cinema_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+.fs-large {
+    font-size: 5rem;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
