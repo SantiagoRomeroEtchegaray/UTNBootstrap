@@ -10,12 +10,12 @@
     background-size: cover;
 }
 
-.vh-50 {
-    height: 50vh;
+.vh-70 {
+    height: 70vh;
 }
 
 .fs-large {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .text-shadow {
